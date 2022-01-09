@@ -7,6 +7,9 @@ import { FormComponent } from './form/form.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
+import { VoteComponent } from './vote/vote.component';
+import { InspiringVoteComponent } from './inspiring-vote/inspiring-vote.component';
+import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
     FormComponent,
     HomePageComponent,
     QuoteComponent,
-    QuoteDetailComponent
+    QuoteDetailComponent,
+    VoteComponent,
+    InspiringVoteComponent,
+    TerribleVoteComponent
   ],
   imports: [
     BrowserModule,
