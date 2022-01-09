@@ -1,3 +1,10 @@
 .landingpage {
   height: 100vh;
+  background-color: black;
+}
+
+#appname {
+  font-family: 'Moo Lah Lah', cursive;
+  font-size: 70px;
+  color: #24E493;
 }
