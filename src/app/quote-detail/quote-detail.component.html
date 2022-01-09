@@ -1,7 +1,10 @@
-<p>{{quote.description}}</p>
-<div class="d-flex justify-content-around">
-  <app-inspiring-vote></app-inspiring-vote>
-
-  <app-terrible-vote></app-terrible-vote>
-  <button class="btn btn-danger" (click)="quoteDelete(true)">Delete</button>
-</div>
+<div>
+  <p>{{quote.description}}</p>
+  <div *ngIf='quote.showButton' class="btns">
+    <button class="hide" (click)='showDescription'> Hide description</button>
+    <div class="d-flex justify-content-around">
+      <app-inspiring-vote></app-inspiring-vote>
+      <app-terrible-vote></app-terrible-vote>
+      <button class="btn btn-danger" (click)="quoteDelete(true)">Delete</button>
+    </div>
+  </div>

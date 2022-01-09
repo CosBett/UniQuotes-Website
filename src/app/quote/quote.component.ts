@@ -7,13 +7,14 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote(1, 'Quote one ', 'des for this quote'),
-    new Quote(2, 'Quote two ', 'des for this quote'),
-    new Quote(3, 'Quote three ', 'des for this quote'),
-    new Quote(4, 'Quote four ', 'des for this quote'),
+    new Quote('Quote one ', 'des for this quote', new Date(2021, 12, 14)),
+    new Quote('Quote two ', 'des for this quote', new Date(2021, 12, 14)),
+    new Quote('Quote three ', 'des for this quote', new Date(2021, 12, 14)),
+    new Quote('Quote four ', 'des for this quote', new Date(2021, 12, 14)),
   ]
   toggleDetails(index: number) {
     this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quotes[index].showButton = !this.quotes[index].showButton;
 
   }
   deleteQuote(isComplete: any, index: number) {
@@ -26,6 +27,7 @@ export class QuoteComponent implements OnInit {
 
     }
   }
+
   constructor() { }
 
   ngOnInit() {

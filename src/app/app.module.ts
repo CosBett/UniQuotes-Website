@@ -9,6 +9,7 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { InspiringVoteComponent } from './inspiring-vote/inspiring-vote.component';
 import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
     QuoteComponent,
     QuoteDetailComponent,
     InspiringVoteComponent,
-    TerribleVoteComponent],
+    TerribleVoteComponent,
+    CountdownComponent],
 
   imports: [
     BrowserModule,
