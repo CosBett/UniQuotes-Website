@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QuoteComponent } from './quote/quote.component';
+import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     HomePageComponent,
-    QuoteComponent
+    QuoteComponent,
+    QuoteDetailComponent
   ],
   imports: [
     BrowserModule,

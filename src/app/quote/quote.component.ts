@@ -7,14 +7,14 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    { id: 1, name: 'Quote one ' },
-    { id: 2, name: 'Quote two ' },
-    { id: 3, name: 'Quote three ' },
-    { id: 4, name: 'Quote four ' },
+    { id: 1, name: 'Quote one ', description: 'des for this quote' },
+    { id: 2, name: 'Quote two ', description: 'des for this quote' },
+    { id: 3, name: 'Quote three ', description: 'des for this quote' },
+    { id: 4, name: 'Quote four ', description: 'des for this quote' },
   ]
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
