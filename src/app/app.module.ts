@@ -7,7 +7,6 @@ import { FormComponent } from './form/form.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
-import { VoteComponent } from './vote/vote.component';
 import { InspiringVoteComponent } from './inspiring-vote/inspiring-vote.component';
 import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
 
@@ -18,10 +17,9 @@ import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
     HomePageComponent,
     QuoteComponent,
     QuoteDetailComponent,
-    VoteComponent,
     InspiringVoteComponent,
-    TerribleVoteComponent
-  ],
+    TerribleVoteComponent],
+
   imports: [
     BrowserModule,
     AppRoutingModule
