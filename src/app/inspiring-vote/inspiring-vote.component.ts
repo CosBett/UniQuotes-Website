@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-inspiring-vote',
@@ -6,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inspiring-vote.component.css']
 })
 export class InspiringVoteComponent implements OnInit {
+  quote!: Quote;
+  upVoteI(index: number) {
 
+  }
   constructor() { }
 
   ngOnInit(): void {
