@@ -1,24 +1,36 @@
-<div class="container">
-  <form action="">
+<div class="container-fluid">
+  <h2 class="text-center">Create a new Quote</h2>
+  <hr>
+  <form (ngSubmit)='submitQuote(quoteForm.value)' #quoteForm='ngForm'>
     <div class="form-group">
-      <label for="quote"></label>
-      <textarea type="text" cols='30' rows='10' class="form-control" name="" id="" placeholder="Write quote here"></textarea>
-    </div>
-    <div class="form-group">
-      <label for="Author"></label>
-      <input type="text" class="form-control" name="" id="" placeholder="Author">
-    </div>
-    <div class="form-group">
-      <label for="Your name"></label>
-      <input type="text" class="form-control" name="" id="" placeholder="Your name">
-    </div>
-    <div class="form-group">
-      <label for="Time posted"></label>
-      <input type="text" class="form-control" name="" id="" placeholder="Time posted">
-    </div>
-    <div class="form-group">
-      <button class="btn btn-primary">Submit quote</button>
-    </div>
+      <label for=" quoteDescription"> Quote Description</label>
+      <textarea type="text" class="form-control" id="quoteDescription" rows="4" name="QuoteDescription" required></textarea>
+      <!-- <div [hidden]="quoteDescription.valid ||quoteDescription.pristine" class="alert alert-danger">
+        <p>Quote is required</p>
+      </div> -->
 
+      <div class="form-group">
+        <label for="Author">Author</label>
+        <input class="form-control" id="author" [(ngModel)]='newQuote.author' name="author" required>
+        <div class="alert alert-danger">
+          <p>Author is required</p>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="postedBy">Posted By</label>
+        <input class="form-control" id="postedBy" name="apostedBy" required>
+        <div class="alert alert-danger">
+          <p>Author is required</p>
+        </div>
+        <div class="form-group">
+          <label for="Timeposted">Time Posted</label>
+          <input type='date' id="timePosted" [(ngModel)]="newQuote.timePosted" name="timePosted" #timePosted="ngModel" required>
+          <div [hidden]="timePosted.valid || timePosted.pristine" class="alert alert-danger">
+            <p>Date is required</p>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Add Quote</button>
+      </div>
+    </div>
   </form>
 </div>
