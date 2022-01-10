@@ -11,7 +11,7 @@ import { QuoteComponent } from '../quote/quote.component';
 export class QuoteDetailComponent implements OnInit {
   @Input()
   quote!: Quote;
-  showDescription!: QuoteComponent;
+  showDetails!: QuoteComponent;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete: boolean) {

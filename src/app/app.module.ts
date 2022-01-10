@@ -9,8 +9,8 @@ import { QuoteComponent } from './quote/quote.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { InspiringVoteComponent } from './inspiring-vote/inspiring-vote.component';
 import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
-import { CountdownComponent } from './countdown/countdown.component';
 import { FormsModule } from '@angular/forms';
+import { VoteHighlightDirective } from './vote-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
     QuoteDetailComponent,
     InspiringVoteComponent,
     TerribleVoteComponent,
-    CountdownComponent],
+    VoteHighlightDirective],
 
   imports: [
     BrowserModule,

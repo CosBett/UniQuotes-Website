@@ -1,10 +1,15 @@
 
 export class Quote {
-  public showDescription: boolean;
+  public showDetails: boolean;
   public showButton: boolean;
-  constructor(public id: number, public author: string, public description: string, public postedBy: string, public timePosted: Date, public upVote: number, public downVote: number) {
-
-    this.showDescription = false;
+  constructor(
+    public author: string,
+    public description: string,
+    public postedBy: string,
+    public timePosted: Date,
+    public upVote: number,
+    public downVote: number) {
+    this.showDetails = false;
     this.showButton = true;
   }
 }

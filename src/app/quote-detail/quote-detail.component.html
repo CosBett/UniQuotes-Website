@@ -4,7 +4,7 @@
   </div>
   <p>Created by : {{quote.postedBy}} on {{quote.timePosted | date}}</p>
   <div *ngIf='quote.showButton' class="btns">
-    <button class="hide" (click)='showDescription'> Hide Description</button>
+    <button class="hide" (click)='showDetails'> Hide Description</button>
     <button (click)='quoteDelete(true)'>Delete</button>
   </div>
 </div>
