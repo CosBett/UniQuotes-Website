@@ -10,6 +10,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { InspiringVoteComponent } from './inspiring-vote/inspiring-vote.component';
 import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
 import { CountdownComponent } from './countdown/countdown.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { CountdownComponent } from './countdown/countdown.component';
 
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
