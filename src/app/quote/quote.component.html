@@ -5,12 +5,7 @@
       <p>
         {{quote.author}}
       </p>
-      <p>{{quote.postedBy}}</p>
-      <p>{{quote.timePosted}}</p>
-      <div>
-        <button (click)="inspired()" class="btn btn-primary">upVote</button><span>{{quote.upVote}}</span>
-        <button (click)="terrible()" class="btn btn-primary">downVote</button></div><span>{{quote.downVote}}</span>
+      <app-quote-detail [quotes]="quote" (isDelete)="deleteQuote($event,i)"></app-quote-detail>
     </div>
   </div>
-</div>
-<app-form (addQuote)="addNewQuote($event)"></app-form>
+  <app-form (addQuote)="addNewQuote($event)"></app-form>

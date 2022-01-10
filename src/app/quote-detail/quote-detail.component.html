@@ -1,4 +1,18 @@
-<div class="quote-description">
+<div>
+  <p>{{quotes.postedBy}}</p>
+  <p>{{quotes.timePosted}}</p>
+  <div>
+    <button (click)="inspired()" class="btn btn-primary">upVote</button><span>{{quotes.upVote}}</span>
+    <button (click)="terrible()" class="btn btn-primary">downVote</button>
+    <span>{{quotes.downVote}}</span>
+    <div (click)="quoteDelete(true)" class="btn btn-danger">Delete</div>
+  </div>
+</div>
+
+
+
+
+<!-- <div class="quote-description">
   <div class="votes">
     Total Up Votes: <span>{{quote.upVote}}</span>
   </div>
@@ -7,14 +21,4 @@
     <button class="hide" (click)='showDetails'> Hide Description</button>
     <button (click)='quoteDelete(true)'>Delete</button>
   </div>
-</div>
-<!-- <div>
-   <p>{{quote.description}}</p>
-  <div *ngIf='quote.showButton' class="btns">
-    <button class="hide" (click)='showDescription'> Hide description</button>
-    <div class="d-flex justify-content-around">
-      <app-inspiring-vote></app-inspiring-vote>
-      <app-terrible-vote></app-terrible-vote>
-      <button class="btn btn-danger" (click)="quoteDelete(true)">Delete</button>
-    </div>
-  </div> -->
+</div> -->
