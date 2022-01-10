@@ -1,5 +1,15 @@
-<div>
-  <p>{{quote.description}}</p>
+<div class="quote-description">
+  <div class="votes">
+    Total Up Votes: <span>{{quote.upVote}}</span>
+  </div>
+  <p>Created by : {{quote.postedBy}} on {{quote.timePosted | date}}</p>
+  <div *ngIf='quote.showButton' class="btns">
+    <button class="hide" (click)='showDescription'> Hide Description</button>
+    <button (click)='quoteDelete(true)'>Delete</button>
+  </div>
+</div>
+<!-- <div>
+   <p>{{quote.description}}</p>
   <div *ngIf='quote.showButton' class="btns">
     <button class="hide" (click)='showDescription'> Hide description</button>
     <div class="d-flex justify-content-around">
@@ -7,4 +17,4 @@
       <app-terrible-vote></app-terrible-vote>
       <button class="btn btn-danger" (click)="quoteDelete(true)">Delete</button>
     </div>
-  </div>
+  </div> -->-->

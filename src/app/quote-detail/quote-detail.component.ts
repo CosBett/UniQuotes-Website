@@ -10,9 +10,8 @@ import { QuoteComponent } from '../quote/quote.component';
 })
 export class QuoteDetailComponent implements OnInit {
   @Input()
-  @Input()
-  showDescription!: QuoteComponent;
   quote!: Quote;
+  showDescription!: QuoteComponent;
   @Output() isComplete = new EventEmitter<boolean>();
 
   quoteDelete(complete: boolean) {
