@@ -4,6 +4,10 @@
   color: white;
 }
 
+.navbar {
+  height: 20vh;
+}
+
 #nav-color {
   color: #24E493;
   font-family: 'Luxurious Roman', cursive;
@@ -24,4 +28,12 @@
 #about-des {
   font-family: 'Sofia', cursive;
   font-size: 14px;
+}
+
+#quote-btn {
+  background-color: #24E493;
+  font-size: 23px;
+  font-family: 'Luxurious Roman', cursive;
+  color: black;
+  border-radius: 10px;
 }
