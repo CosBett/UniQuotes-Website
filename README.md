@@ -6,7 +6,11 @@ Latest version - 11th Jan 2022
 #### By **Cosmas Bett**
 ## Description
 
-![Gif illustration](./images/delani_studio.gif)
+### landing Page
+![Gif illustration](./src/assets/landingpage.jpg)
+### Quote display page
+![Gif illustration](./src/assets/quotedisplay.jpg)
+
 
 This web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding voting you favorite inspiring quotes.
           It also enable you to down vote and delete terrible quotes
