@@ -1,0 +1,20 @@
+#thumb {
+  color: #24E493;
+}
+
+#delete {
+  color: red;
+  float: right;
+}
+
+em {
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 12px;
+  font-weight: bolder;
+}
+
+#post {
+  font-family: 'Luxurious Roman', cursive;
+  font: size 14px;
+  ;
+}

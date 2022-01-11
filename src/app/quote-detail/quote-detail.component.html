@@ -1,18 +1,19 @@
 <div>
-  <p>{{quotes.postedBy}}</p>
-  <p>{{quotes.timePosted}}</p>
+  <p> <em>Posted By :</em><span id="post">{{quotes.postedBy}}</span></p>
+  <p><em>Time elapse :</em><span id="post">{{quotes.timePosted}}</span></p>
+
   <div>
-    <button (click)="inspired()" class="btn btn-primary">upVote</button><span>{{quotes.upVote}}</span>
-    <button (click)="terrible()" class="btn btn-primary">downVote</button>
+    <button id="thumb" (click)="inspired()" class="btn"><i class="fa fa-thumbs-up"></i></button><span>{{quotes.upVote}}</span>
+    <button (click)="terrible()" class="btn"><i class="fa fa-thumbs-down"></i></button>
     <span>{{quotes.downVote}}</span>
-    <div (click)="quoteDelete(true)" class="btn btn-danger">Delete</div>
+    <div id="delete" (click)="quoteDelete(true)" class="btn" id="delete">Delete <i class="fa fa-trash"></i></div>
+
   </div>
-</div>
 
 
 
 
-<!-- <div class="quote-description">
+  <!-- <div class="quote-description">
   <div class="votes">
     Total Up Votes: <span>{{quote.upVote}}</span>
   </div>

@@ -1,0 +1,32 @@
+#display-section {
+  background-color: black;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.897);
+  border-radius: 20px;
+  color: black;
+  border-color: #24E493;
+}
+
+#quote-des {
+  font-family: 'Sofia', cursive;
+  font-size: 18px;
+}
+
+em {
+  font-size: x-large;
+  font-weight: 900;
+}
+
+#author {
+  font-family: 'Luxurious Roman', cursive;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn {
+  font-weight: 900;
+  color: #24E493;
+  font-size: 25px;
+}

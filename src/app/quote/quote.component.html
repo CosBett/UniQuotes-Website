@@ -1,11 +1,14 @@
-<div class=" row container">
-  <div class="col-md-4" *ngFor="let quote of quotes; let i= index">
-    <div class="card">
-      <p>{{quote.description}}</p>
-      <p>
+<div class=" row container-fluid d-flex justify-content-around g-0 mt-0 p-3" id="display-section">
+  <div class="col-md-4 p-2 mt-2" *ngFor="let quote of quotes; let i= index">
+    <div class="card p-2">
+      <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
+      <p id="author">
         {{quote.author}}
       </p>
-      <app-quote-detail [quotes]="quote" (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+      <div *ngIf='quote.showDetails'>
+        <app-quote-detail [quotes]="quote" [quotes]="quote" (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+      </div>
+      <button class=" btn hide" (click)='showDet(i)'><i class="fa fa-angle-double-right"></i></button>
     </div>
   </div>
   <app-form (addQuote)="addNewQuote($event)"></app-form>
