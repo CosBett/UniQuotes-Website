@@ -1,6 +1,6 @@
-# PrimeQuotesApp
+# Uni-Quotes App
 This quote web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding and voting your favorite inspiring quotes.It also enable you to down vote and delete terrible quotes.
-<a href="" > Live Demo link</a>
+<a href="https://cosbett.github.io/UniQuotes-Website/" > Live Demo link</a>
 #### This is a Quote application   
 Latest version - 11th Jan 2022
 #### By **Cosmas Bett**
@@ -15,7 +15,7 @@ Latest version - 11th Jan 2022
 This web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding voting you favorite inspiring quotes.
           It also enable you to down vote and delete terrible quotes
 
-<a href="" > Live Demo link</a>
+<a href="https://cosbett.github.io/UniQuotes-Website/" > Live Demo link</a>
 
 ### How to Clone this application,
  1. Open the terminal
@@ -23,8 +23,8 @@ This web application inspires you with a variety of quotes and gives you opportu
 3. Open and edit with a code editor of your preference.
 
 ### Usage Instruction,
-1. Open your browser (preferably google chrome and active internet connection is required.) and paste the link below;
- or <a href="" > Click here</a> to acess the 
+1. Open your browser (preferably google chrome and active internet connection is required.) and paste the link below; https://cosbett.github.io/UniQuotes-Website/
+ or <a href="https://cosbett.github.io/UniQuotes-Website/" > Click here</a> to acess the 
 2. Depending on your needs you can easily maneuver around the page.
 3. The page provides well label buttons to make usage easily understandable and interative.
 
@@ -35,7 +35,7 @@ This is a web application and there is no need to worry about installing it . Th
 The application cannot store data at the moment.
 
 ## Technologies Used
-1. HTML.
+1. Typescript- application functionality.
 2. Boostrap -for framework and overall web page responsiveness.
 3. Javascript - Connect mail chimp API and track users responses through email and form on the web page.
 4. AngularJs - Give the page contents a good UI/UX and make frontend interactive
