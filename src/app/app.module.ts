@@ -12,6 +12,7 @@ import { TerribleVoteComponent } from './terrible-vote/terrible-vote.component';
 import { FormsModule } from '@angular/forms';
 import { VoteHighlightDirective } from './vote-highlight.directive';
 import { CountdownPipe } from './countdown.pipe';
+import { DateAgoPipe } from './date-ago.pipe';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CountdownPipe } from './countdown.pipe';
     InspiringVoteComponent,
     TerribleVoteComponent,
     VoteHighlightDirective,
-    CountdownPipe],
+    CountdownPipe,
+    DateAgoPipe],
 
   imports: [
     BrowserModule,

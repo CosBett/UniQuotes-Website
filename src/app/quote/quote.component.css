@@ -9,6 +9,10 @@
   border-color: #24E493;
 }
 
+.card:hover {
+  transform: scale(1.1);
+}
+
 #quote-des {
   font-family: 'Sofia', cursive;
   font-size: 18px;

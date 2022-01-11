@@ -1,6 +1,6 @@
 <div>
   <p> <em>Posted By :</em><span id="post">{{quotes.postedBy}}</span></p>
-  <p><em>Time elapse :</em><span id="post">{{quotes.timePosted}}</span></p>
+  <p><em>Time elapse :</em><span id="post">{{quotes.timePosted|countdown}} Days since Posted.</span></p>
 
   <div>
     <button id="thumb" (click)="inspired()" class="btn"><i class="fa fa-thumbs-up"></i></button><span>{{quotes.upVote}}</span>

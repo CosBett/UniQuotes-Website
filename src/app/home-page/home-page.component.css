@@ -1,40 +1,44 @@
-.landingpage {
-  height: 100vh;
-  background-color: black;
-  color: white;
-}
-
-.navbar {
-  height: 10vh;
-}
-
-#nav-color {
-  color: #24E493;
-  font-family: 'Luxurious Roman', cursive;
-}
-
-#appname {
-  font-family: 'Moo Lah Lah', cursive;
-  font-size: 60px;
-  color: #24E493;
-}
-
-#about {
-  font-family: 'Luxurious Roman', cursive;
-  font-size: 25px;
-  text-align: center;
-}
-
-#about-des {
-  font-family: 'Sofia', cursive;
-  font-size: 14px;
-  padding: 15px;
-}
-
-#quote-btn {
-  background-color: #24E493;
-  font-size: 23px;
-  font-family: 'Luxurious Roman', cursive;
-  color: black;
-  border-radius: 10px;
-}
+    .landingpage {
+      height: 100vh;
+      background-color: black;
+      color: white;
+    }
+    
+    .navbar {
+      height: 10vh;
+    }
+    
+    #nav-color {
+      color: #24E493;
+      font-family: 'Luxurious Roman', cursive;
+    }
+    
+    #appname {
+      font-family: 'Moo Lah Lah', cursive;
+      font-size: 60px;
+      color: #24E493;
+    }
+    
+    #about {
+      font-family: 'Luxurious Roman', cursive;
+      font-size: 25px;
+      text-align: center;
+    }
+    
+    #about-des {
+      font-family: 'Sofia', cursive;
+      font-size: 14px;
+      padding: 15px;
+    }
+    
+    #quote-btn {
+      background-color: #24E493;
+      font-size: 23px;
+      font-family: 'Luxurious Roman', cursive;
+      color: black;
+      border-radius: 10px;
+    }
+    
+    #quote-btn:hover {
+      transform: scale(1.1);
+    }

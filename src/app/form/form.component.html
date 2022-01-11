@@ -1,33 +1,38 @@
-<div class="container-fluid">
-  <h2 class="text-center">Create a new Quote</h2>
-  <hr>
-  <form (ngSubmit)='submitQuote(quoteForm.value)' #quoteForm='ngForm'>
-    <div class="form-group">
-      <label for=" description"> Quote Description</label>
-      <textarea type="text" class="form-control" id="description" rows="4" name="description" ngModel required></textarea>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../../assets/form.jpg" class="img-fluid" alt="form.jpg" id="form-img">
+    </div>
+    <div class="col-md-6">
+      <div class="card ">
+        <h3 class="text-center">Create a new Quote</h3>
+        <hr>
+        <form (ngSubmit)='submitQuote(quoteForm.value)' #quoteForm='ngForm'>
+          <div class="form-group">
+            <label for=" description"> Quote Description</label>
+            <textarea type="text" class="form-control" id="description" rows="2" name="description" ngModel required placeholder="Write your quote here"></textarea>
 
-      <div class="form-group">
-        <label for="author">Author</label>
-        <input class="form-control" id="author" ngModel name="author" required>
-        <div class="alert alert-danger">
-          <p>Author is required</p>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="postedBy">Posted By</label>
-        <input class="form-control" id="postedBy" name="postedBy" ngModel required>
-        <div class="alert alert-danger">
-          <p>Author is required</p>
-        </div>
-        <div class="form-group">
-          <label for="timeposted">Time Posted</label>
-          <input type='date' id="timePosted" ngModel name="timePosted" #timePosted="ngModel" required>
-          <div [hidden]="timePosted.valid || timePosted.pristine" class="alert alert-danger">
-            <p>Date is required</p>
+            <div class="form-group">
+              <label for="author">Author</label>
+              <input class="form-control" id="author" ngModel name="author" required placeholder="Author's Name">
+            </div>
+            <div class="form-group">
+              <label for="postedBy">Posted By</label>
+              <input class="form-control" id="postedBy" name="postedBy" ngModel required placeholder="Your Name">
+              <div class="form-group">
+                <label for="timeposted">Time Posted</label>
+                <input type='date' id="timePosted" ngModel name="timePosted" #timePosted="ngModel" required>
+                <div [hidden]="timePosted.valid || timePosted.pristine" class="alert alert-danger">
+                  <p>Date is required</p>
+                </div>
+              </div>
+              <div class="dflex justify-content-center">
+                <button type="submit" class="btn">Add Quote</button>
+              </div>
+            </div>
           </div>
-        </div>
-        <button type="submit" class="btn btn-success">Add Quote</button>
+        </form>
       </div>
     </div>
-  </form>
+  </div>
 </div>
