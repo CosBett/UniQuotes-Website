@@ -1,5 +1,6 @@
 #thumb {
   color: #24E493;
+  background-color: transparent;
 }
 
 #delete {
@@ -16,5 +17,4 @@ em {
 #post {
   font-family: 'Luxurious Roman', cursive;
   font: size 14px;
-  ;
 }

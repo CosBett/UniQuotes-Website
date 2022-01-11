@@ -12,6 +12,6 @@ export class VoteHighlightDirective {
     return high;
   }
   constructor(el: ElementRef) {
-    el.nativeElement.style.backgroundColor = 'rgba(249, 165, 49, 0.2)';
+    el.nativeElement.style.backgroundColor = '#24E493';
   }
 }

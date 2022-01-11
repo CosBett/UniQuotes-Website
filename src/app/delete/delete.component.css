@@ -1,0 +1,10 @@
+#thumb {
+  color: red;
+  background-color: transparent;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+button:hover {
+  transform: scale(1.2);
+}

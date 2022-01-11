@@ -2,15 +2,23 @@
 
   <div class="col-md-4 p-2 mt-2" *ngFor="let quote of quotes; let i= index">
 
-    <div appHighlight class="card p-2">
-      <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
-      <p id="author">
-        {{quote.author}}
-      </p>
-      <div *ngIf='quote.showDetails'>
-        <app-quote-detail [quotes]="quote" [quotes]="quote" (isDelete)="deleteQuote($event,i)"></app-quote-detail>
+    <!-- <app-quote-highest *ngIf="quote.likevotes === count && quote.likevotes>0 && quote.showAllQuotes" [theQuote]="quote"></app-quote-highest> -->
+    <div class="card p-2">
+      <div id="highlight" class="card p-2" appVoteHighlight *ngIf="quote.votes === totalVotes && quote.votes>0 ">
+        <p> Highest Voted inspiring quote!</p>
       </div>
-      <button class=" btn hide" (click)='showDet(i)'><i class="fa fa-angle-double-right"></i></button>
+      <!-- <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p> -->
+      <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
+      <p id="author"> {{quote.author}}</p>
+      <p> <em id="em">Posted By :</em><span id="post">{{quote.postedBy}}</span></p>
+      <p><em id="em">Time elapse :</em><span id="post">{{quote.timePosted|dateAgo}} Days since Posted.</span></p>
+
+      <div class="d-flex justify-content-around">
+        <button id="thumb" (click)="inspired(i)" class="btn"><i class="fa fa-thumbs-up"></i > {{quote.votes}}</button>
+        <app-down-vote></app-down-vote>
+        <app-delete (Complete)="deleteDatails($event,i)"></app-delete>
+
+      </div>
     </div>
   </div>
   <app-form (addQuote)="addNewQuote($event)"></app-form>
