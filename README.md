@@ -1,27 +1,52 @@
 # PrimeQuotesApp
+This quote web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding and voting your favorite inspiring quotes.It also enable you to down vote and delete terrible quotes.
+<a href="" > Live Demo link</a>
+#### This is a Quote application   
+Latest version - 11th Jan 2022
+#### By **Cosmas Bett**
+## Description
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
+![Gif illustration](./images/delani_studio.gif)
 
-## Development server
+This web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding voting you favorite inspiring quotes.
+          It also enable you to down vote and delete terrible quotes
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+<a href="" > Live Demo link</a>
 
-## Code scaffolding
+### How to Clone this application,
+ 1. Open the terminal
+ 2. Paste this <strong> git clone  </strong>
+3. Open and edit with a code editor of your preference.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Usage Instruction,
+1. Open your browser (preferably google chrome and active internet connection is required.) and paste the link below;
+ or <a href="" > Click here</a> to acess the 
+2. Depending on your needs you can easily maneuver around the page.
+3. The page provides well label buttons to make usage easily understandable and interative.
 
-## Build
+### Installation
+This is a web application and there is no need to worry about installing it . There is no other code this app depends on.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Known Bugs
+The application cannot store data at the moment.
 
-## Running unit tests
+## Technologies Used
+1. HTML.
+2. Boostrap -for framework and overall web page responsiveness.
+3. Javascript - Connect mail chimp API and track users responses through email and form on the web page.
+4. AngularJs - Give the page contents a good UI/UX and make frontend interactive
+5. CSS- for extra page styling. 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Support and contact details
 
-## Running end-to-end tests
+Incase of any issues or clarification, development, ideas, concerns or contributions to the code.  Kindly reach out through my email cosmasbett9@gmail.com.
+### License
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* Copyright 2021 Cosmas Bett
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*
+Copyright (c) 2021 **Cosmas Bett**
+  
