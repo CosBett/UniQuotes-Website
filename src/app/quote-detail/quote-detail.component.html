@@ -1,6 +1,6 @@
 <div>
   <p> <em>Posted By :</em><span id="post">{{quotes.postedBy}}</span></p>
-  <p><em>Time elapse :</em><span id="post">{{quotes.timePosted|countdown}} Days since Posted.</span></p>
+  <p><em>Time elapse :</em><span id="post">{{quotes.timePosted|dateAgo}} Days since Posted.</span></p>
 
   <div>
     <button id="thumb" (click)="inspired()" class="btn"><i class="fa fa-thumbs-up"></i></button><span>{{quotes.upVote}}</span>
@@ -9,17 +9,3 @@
     <div id="delete" (click)="quoteDelete(true)" class="btn" id="delete">Delete <i class="fa fa-trash"></i></div>
 
   </div>
-
-
-
-
-  <!-- <div class="quote-description">
-  <div class="votes">
-    Total Up Votes: <span>{{quote.upVote}}</span>
-  </div>
-  <p>Created by : {{quote.postedBy}} on {{quote.timePosted | date}}</p>
-  <div *ngIf='quote.showButton' class="btns">
-    <button class="hide" (click)='showDetails'> Hide Description</button>
-    <button (click)='quoteDelete(true)'>Delete</button>
-  </div>
-</div> -->

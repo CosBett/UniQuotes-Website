@@ -19,7 +19,7 @@ This web application inspires you with a variety of quotes and gives you opportu
 
 ### How to Clone this application,
  1. Open the terminal
- 2. Paste this <strong> git clone  </strong>
+ 2. Paste this <strong> git clone https://github.com/CosBett/UniQuotes-Website.git </strong>
 3. Open and edit with a code editor of your preference.
 
 ### Usage Instruction,

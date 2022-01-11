@@ -14,7 +14,8 @@ export class FormComponent implements OnInit {
 
   submitQuote(form: any) {
     this.addQuote.emit(form)
-    console.log(form)
+
+    form.reset()
   }
 
   constructor() { }

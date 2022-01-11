@@ -7,10 +7,12 @@
   border-radius: 20px;
   color: black;
   border-color: #24E493;
+  animation: reverse;
 }
 
 .card:hover {
   transform: scale(1.1);
+  border-style: groove;
 }
 
 #quote-des {

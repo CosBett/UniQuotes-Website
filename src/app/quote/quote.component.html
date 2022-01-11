@@ -1,6 +1,8 @@
 <div class=" row container-fluid d-flex justify-content-around g-0 mt-0 p-3" id="display-section">
+
   <div class="col-md-4 p-2 mt-2" *ngFor="let quote of quotes; let i= index">
-    <div class="card p-2">
+
+    <div appHighlight class="card p-2">
       <p id="quote-des"><em>"</em><span>{{quote.description}}</span><em>"</em></p>
       <p id="author">
         {{quote.author}}

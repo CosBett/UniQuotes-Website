@@ -17,7 +17,7 @@ export class QuoteComponent implements OnInit {
 
   deleteQuote(isComplete: any, index: any) {
     if (isComplete) {
-      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index]}`)
+      let toDelete = confirm(`Are you sure you want to delete Quote`)
       if (toDelete) {
         this.quotes.splice(index, 1);
       }
@@ -32,7 +32,7 @@ export class QuoteComponent implements OnInit {
     this.quotes[index].showDetails = !this.quotes[index].showDetails;
     this.quotes[index].showButton = !this.quotes[index].showButton;
   }
-
+  totalVotes: number = 0;
   constructor() { }
 
   ngOnInit() {
