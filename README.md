@@ -1,7 +1,7 @@
 # Uni-Quotes App
-This quote web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding and voting your favorite inspiring quotes.It also enable you to down vote and delete terrible quotes.
+
 <a href="https://cosbett.github.io/UniQuotes-Website/" > Live Demo link</a>
-#### This is a Quote application   
+####  This quote web application inspires you with a variety of quotes and gives you opportunity to inspire others by adding and voting your favorite inspiring quotes.It also enable you to down vote and delete terrible quotes. 
 Latest version - 11th Jan 2022
 #### By **Cosmas Bett**
 ## Description
